@@ -5,10 +5,9 @@ machine:
     version: oraclejdk8
   services:
     - docker
-  environment:
-    PROFILE: testGemFlux
-    CHECKDIR: checksums
 
 test:
   override:
-    - ./test.sh
+    - PROFILE=testGemFlux ./test.sh
+    - PROFILE=testStarRsem ./test.sh
+    - PROFILE=testStarFlux ./test.sh
