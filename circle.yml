@@ -6,7 +6,7 @@ machine:
   services:
     - docker
   environment:
-    PROFILE: test
+    PROFILE: testGemFlux
     CHECKDIR: checksums
 
 test:
